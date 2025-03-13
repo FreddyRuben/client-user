@@ -1,0 +1,46 @@
+<h2>Users</h2>
+<table>
+    <thead>
+      <tr>
+        <th>Ident</th>
+        <th>Username</th>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user._id}}</td>
+        <td>{{ user.user_name }}</td>
+        <td>{{ user.first_name }}</td>
+        <td>{{ user.last_name }}</td>
+        <td>{{ user.age }}</td>
+        <td><button (click)="selectUser(user)">Edit</button><button (click)="deleteUser(user._id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="selectedUserId">
+    <h3>Edit User</h3>
+    <form [formGroup]="updateForm" (ngSubmit)="updateUser()">
+      <label>Username: <input type="text" formControlName="user_name"></label><br>
+      <label>Name: <input type="text" formControlName="first_name"></label><br>
+      <label>Last Name: <input type="text" formControlName="last_name"></label><br>
+      <label>Age: <input type="number" formControlName="age"></label><br>
+      <button type="submit">Update</button>
+      <button type="button" (click)="cancelUpdate()">Cancel</button>
+    </form>
+  </div>
+
+  <div>
+    <h3>Create New User</h3>
+    <form [formGroup]="createForm" (ngSubmit)="createUser()">
+      <label>Username: <input type="text" formControlName="user_name"></label><br>
+      <label>Name: <input type="text" formControlName="first_name"></label><br>
+      <label>Last Name: <input type="text" formControlName="last_name"></label><br>
+      <label>Age: <input type="number" formControlName="age"></label><br>
+      <button type="submit">Create</button>
+    </form>
+  </div>
