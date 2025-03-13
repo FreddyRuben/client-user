@@ -1,59 +1,42 @@
-# ClientUser
+# Front-End de Usuarios
+Una API basica de usuarios creada con Node y Express
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
-
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
+## Instrucciones (Español)
+1. Clona el proyecto con el comando:
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+git clone
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
+2. Accede al directorio del proyecto con el siguiente comando:
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
+cd api-users
 ```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+3. Instala dependencias con el comando:
 ```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
+npm install
 ```
+4. Ejecuta el servidor de prueba con:
+```
+npm start
+```
+5. Ahora podras acceder desde el navegador en el host local con el puerto 4200
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Instructions (English)
+1. Clone the project with the command:
+```
+git clone
+```
+2. Access the project directory with the following command:
+```
+cd api-users
+```
+3. Install dependencies with the command:
+```
+npm install
+```
+4. Run the test server with:
+```
+npm start
+```
+5. You can now access it from a browser on the local host using port 4200
